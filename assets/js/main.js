@@ -31,6 +31,11 @@ const nextBtn = document.querySelector('.next');
 prevBtn.addEventListener('click', function () {
     console.log("previous img");
     currentImg--;
+
+    if (currentImg < 0){
+        currentImg = imgList.length - 1;
+    }
+
     const activeImg = document.querySelector('img.active');
     console.log(activeImg);
     activeImg.classList.remove('active');
@@ -45,6 +50,11 @@ prevBtn.addEventListener('click', function () {
 nextBtn.addEventListener('click', function () {
     console.log("next img");
     currentImg++;
+
+    if (currentImg > imgList.length -1){
+        currentImg = 0;
+    }
+
     const activeImg = document.querySelector('img.active');
     console.log(activeImg);
     activeImg.classList.remove('active');
