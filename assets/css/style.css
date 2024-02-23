@@ -1,6 +1,13 @@
 .carousel {
     width: 800px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    &>button{
+        max-height: 100px;
+        align-self: center;
+    }
 }
 
 .slides {
@@ -15,9 +22,4 @@
         display: none;
     }
 
-}
-
-.movement {
-    display: flex;
-    justify-content: space-between;
 }
