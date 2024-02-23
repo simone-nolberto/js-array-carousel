@@ -1,0 +1,26 @@
+.carousel {
+    width: 800px;
+    margin: auto;
+}
+
+.slides {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    & img:not(.active){
+        display: none;
+    }
+}
+
+
+.movement {
+    display: flex;
+    justify-content: space-between;
+}
