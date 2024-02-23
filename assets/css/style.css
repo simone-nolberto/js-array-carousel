@@ -9,18 +9,13 @@
     flex-direction: column;
 
 
-    & img {
+    & img:not(.active) {
         max-width: 100%;
         height: auto;
         display: none;
     }
 
 }
-
-.active{
-    display: inline;
-}
-
 
 .movement {
     display: flex;
