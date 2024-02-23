@@ -12,13 +12,13 @@ console.log(slides);
 for (let i = 0; i < imgList.length; i++) {
     const img = imgList[i];
     console.log(img);
-    currentImg = img;
-    console.log(currentImg);
     
-    const slidesContent = `<img class=${ currentImg === 0  ? 'active': '' }"active" src="./assets/img/${img}" alt="">`;
+    const slidesContent = `<img class=${ i === currentImg ? 'active': '' } src="./assets/img/${img}" alt="">`;
 
     console.log(slidesContent);
 
+    slides.insertAdjacentHTML('beforeend', slidesContent);
+    console.log();
  
 
 }
