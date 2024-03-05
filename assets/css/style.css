@@ -19,11 +19,13 @@
 
     & img:not(.active) {
         display: none;
-        object-fit: cover;
     }
 
-    .active {
-        object-fit: cover;
-    }
 
+}
+
+img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
 }
